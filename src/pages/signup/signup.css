@@ -1,0 +1,84 @@
+.signupImg{
+    height: 100%;
+    width: 108.5%;
+}
+
+.signupNewUser {
+    flex: 4;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.signupNewUserForm{
+    margin-top: 100px;
+}
+  
+.signupNewUserItem {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-left: 360px;
+}
+
+.signupNewUserItem > label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(151, 150, 150);
+}
+  
+.signupNewUserItem > input {
+    height: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.signupNewUserButton {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 350px;
+    margin-top: 30px;
+  }
+  
+.signupNewUserButton:disabled {
+    cursor: default;
+}
+
+.signupNewUserButton:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.signupAlreadyAccount{
+    margin-top: 10px;
+}
+
+.signupNewUserTitle{
+    color: #405cf5;
+}

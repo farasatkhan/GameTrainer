@@ -1,0 +1,133 @@
+.sidebar {
+    flex: 1;
+    height: calc(100vh);
+    background-color: rgb(251, 251, 255);
+    position: sticky;
+}
+
+.sidebarWrapper {
+    padding: 20px;
+    height: calc(100vh);
+    color: #555;
+}
+ 
+.sidebarMenu {
+    margin-bottom: 10px;
+}
+
+.sidebarTitle {
+font-size: 13px;
+color: rgb(187, 186, 186);
+}
+
+.sidebarList {
+list-style: none;
+padding: 5px;
+}
+
+.sidebarListItem {
+padding: 5px;
+cursor: pointer;
+display: flex;
+align-items: center;
+border-radius: 10px;
+margin-top: 15px;
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover {
+background-color: rgb(240, 240, 255);
+}
+
+.sidebarIcon{
+    margin-right: 5px;
+    font-size: 20px !important;
+}
+
+.sidebarUserImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.sidebarUserProfile{
+    margin-left: 20px;
+}
+
+.sidebarUserImg{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.sidebarUserName{
+    margin-left: 50px;
+}
+
+.sidebarUserProfileLink{
+    color: blue;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.sidebarLineBreak{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebarLogoutBtn{
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+.LogoutBtn{
+    margin-top: 40px;
+}
+
+.sidebarLogoutBtn {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+  }
+  
+.sidebarLogoutBtn:disabled {
+    cursor: default;
+}
+
+.sidebarLogoutBtn:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.redirectLink{
+    text-decoration: none;
+}
+
+.logoutLink{
+    color:#fff;
+    text-decoration: none;
+}
+

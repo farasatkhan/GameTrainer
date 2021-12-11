@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/home/Home';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SignUp from "./pages/signup/Signup";
+import Login from "./pages/login/Login";
+import Notfound from './components/Notfound/Notfound';
+import ComingSoon from './components/ComingSoon/ComingSoon';
+import Rtip from './pages/rtip/Rtip';
+import RedirectManual from './components/RedirectManual';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+      <div className="container">
+        <Routes>
+          <Route exact path="/" element={<RedirectManual/>}></Route>
+          <Route exact path="/home" element={<Home/>}></Route>
+          <Route exact path="/signup" element={<SignUp/>}></Route>
+          <Route exact path="/login" element={<Login/>}></Route>
+          <Route exact path="/rtip" element={<Rtip/>}></Route>
+          <Route exact path="/cs" element={<ComingSoon/>}></Route>
+          <Route path="*" element={<Notfound/>}></Route>
+        </Routes>
+      </div>
+    </Router>
+
+    
+    </>
   );
 }
+
 
 export default App;
